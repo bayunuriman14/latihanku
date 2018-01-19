@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Type pada Javascript</title>
+</head>
+<body>
+        <script>
+
+		// boolean
+		var sayaGanteng = true;
+
+		// null
+		var istri = null;
+
+		// undefined
+		var siapaSaya;
+
+		// number
+		var berapa = 5;
+
+		// string
+		var tawa = "wkwkwkwkwwkwkw land";
+
+		// symbol
+		var simb1 = Symbol("yogs");
+		var simb2 = Symbol("yogs");
+
+		// object
+		var isiTas = ["buku", "pulpen", 5 , "headset", null]; // bisa disebut array
+
+		var dataMahasiswa = {nama:"Bayu Nur Iman",asal:"Semarang", jurusan:"Sistem Informasi"};
+
+		var dataDosen = new Object();
+		dataDosen.nama = "Budi";
+		dataDosen.homebase = "Teknik Informatika";
+		dataDosen.jabatan = "Lektor";
+		dataDosen.umur = 55;
+
+
+		document.write(sayaGanteng + "<br> <em>variabel sayaGanteng</em> adalah tipe " + typeof(sayaGanteng), "<br><br>");
+
+		document.write(istri + "<br> <em>variabel istri</em> adalah tipe " + typeof(istri), "<br><br>");
+
+		document.write(siapaSaya + "<br> <em>variabel siapasaya</em> " + typeof(siapasaya), "<br><br>");
+
+		document.write(berapa + "<br> <em>variabel berapa</em> adalah tipe " + typeof(berapa), "<br><br>");
+
+		document.write(tawa + "<br> <em>variabel tawa</em> adalah tipe " + typeof(tawa), "<br><br>");
+
+		document.write(simb1 === simb2);
+		document.write("<br>");
+
+		document.write(String(simb1) === String(simb2));
+		document.write("<br><br>");
+
+		document.write(isiTas + "<br> <em>variabel isiTas</em> adalah tipe " + typeof(isiTas), "<br><br>");
+		document.write("nama mahasiswa " + dataMahasiswa['nama'] + "<br>jurusan " + dataMahasiswa['jurusan'] + "<br><br>"  );
+		document.write("nama dosen " + dataDosen.nama + "<br>jabatan " + dataDosen.jabatan);
+
+
+
+	
+        </script>
+</body>
+</html>
